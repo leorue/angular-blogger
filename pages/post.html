@@ -1,0 +1,32 @@
+<div class="post">
+        <a class="close-post" href="#">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </a>
+        <section>
+        <div class="container">
+            <h1 class="hobbies-title text-left">{{ posts.items[key].title }}</h1>
+            <h3>{{ posts.items[key].author.displayName }} /// {{ posts.items[key].published | date:'fullDate' }}</h3>
+        </div>
+        </section>
+        <section class="contents">
+            <div class="container">
+                <div ng-bind-html="posts.items[key].content | to_trusted"></div>
+            </div>
+        </section>
+        <section class="comments">
+            <div class="container">
+                <dir-disqus disqus-shortname="angularblogger"
+                         disqus-identifier="{{ key }}"
+                         disqus-url="{{ postURL }}">
+                </dir-disqus>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+            Here will be the footer
+            </div>
+        </footer>
+</div>

@@ -1,0 +1,19 @@
+<header class="blog-header-img">
+    <div class="text-center blog-title">
+        <h1>{{ title }}</h1>
+        <h4>{{ description }}</h4>
+    </div>
+</header>
+<section>
+<div class="container-fluid blog-holder">
+    <input class="blogSearch" type="text" ng-model="dataFilter" placeholder="Search..."/></td>
+    <div class="row postItem" ng-repeat="(key, post) in posts.items | filter: dataFilter">
+        <a class="" href="#{{ key }}">
+        <p>{{ posts.items[key].etag }}</p>
+        <h1>{{ posts.items[key].title }}</h1>
+        <h3>{{ posts.items[key].author.displayName }} /// {{ posts.items[key].published  | date:'fullDate' }}</h3>
+        </a>
+    </div>
+</div>
+</section>
+<footer></footer>
