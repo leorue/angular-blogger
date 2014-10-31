@@ -42,7 +42,7 @@
 
 	mainApp.factory('Blog',function($resource){
     	return $resource(
-    		'https://www.googleapis.com/blogger/v3/blogs/3213900/posts/?&key=AIzaSyAR2KdHKQ_5zQglRpgeZtRs11DCoS_eE3A4',
+    		'https://www.googleapis.com/blogger/v3/blogs/3213900/posts?&key=AIzaSyAR2KdHKQ_5zQglRpgeZtRs11DCoS_eE3A',
     		{},
       		{query: { method: 'GET', isArray: false }}
     	);
