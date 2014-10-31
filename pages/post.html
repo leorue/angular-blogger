@@ -5,10 +5,10 @@
                 </div>
             </div>
         </a>
-        <section>
+        <section id="post-intro">
         <div class="container">
-            <h1 class="hobbies-title text-left">{{ posts.items[key].title }}</h1>
-            <h3>{{ posts.items[key].author.displayName }} /// {{ posts.items[key].published | date:'fullDate' }}</h3>
+            <h1 class="post-title text-left">{{ posts.items[key].title }}</h1>
+            <h3 class="post-author text-left">{{ posts.items[key].author.displayName }} /// {{ posts.items[key].published | date:'fullDate' }}</h3>
         </div>
         </section>
         <section class="contents">
@@ -24,9 +24,4 @@
                 </dir-disqus>
             </div>
         </section>
-        <footer>
-            <div class="container">
-            Here will be the footer
-            </div>
-        </footer>
 </div>

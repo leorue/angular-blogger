@@ -7,11 +7,11 @@
 <section>
 <div class="container-fluid blog-holder">
     <input class="blogSearch" type="text" ng-model="dataFilter" placeholder="Search..."/></td>
-    <div class="row postItem" ng-repeat="(key, post) in posts.items | filter: dataFilter">
+    <div class="row postItem text-center" ng-repeat="(key, post) in posts.items | filter: dataFilter">
         <a class="" href="#{{ key }}">
-        <p>{{ posts.items[key].etag }}</p>
-        <h1>{{ posts.items[key].title }}</h1>
-        <h3>{{ posts.items[key].author.displayName }} /// {{ posts.items[key].published  | date:'fullDate' }}</h3>
+        <p class="blog-holder-catagory">{{ posts.items[key].labels }}</p>
+        <h1 class="blog-holder-title">{{ posts.items[key].title }}</h1>
+        <h3 class="blog-holder-author">{{ posts.items[key].author.displayName }} /// {{ posts.items[key].published  | date:'fullDate' }}</h3>
         </a>
     </div>
 </div>

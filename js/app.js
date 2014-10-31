@@ -36,13 +36,13 @@
 		console.log($scope.postURL);
 	   	$scope.searchFilter = function (post) {
 	    var keyword = new RegExp($scope.dataFilter, 'i');
-	    	return !$scope.dataFilter || keyword.test(posts.title) || keyword.test(posts.author.displayName) || keyword.test(postsetag) || keyword.test(posts.content);
+	    	return !$scope.dataFilter || keyword.test(posts.title) || keyword.test(posts.author.displayName) || keyword.test(posts.labels) || keyword.test(posts.content);
 		};
 	});
 
 	mainApp.factory('Blog',function($resource){
     	return $resource(
-    		'https://www.googleapis.com/blogger/v3/blogs/3213900/posts/?&key=AIzaSyDD_M6lnUlByde6S7NGg0FFLDMER-aBv8Y',
+    		'https://www.googleapis.com/blogger/v3/blogs/3213900/posts/?&key=AIzaSyAR2KdHKQ_5zQglRpgeZtRs11DCoS_eE3A4',
     		{},
       		{query: { method: 'GET', isArray: false }}
     	);
@@ -54,7 +54,7 @@
         };
     }]);
 
-mainApp.directive('dirDisqus', ['$window', function($window) {
+    mainApp.directive('dirDisqus', ['$window', function($window) {
         return {
             restrict: 'E',
             scope: {
