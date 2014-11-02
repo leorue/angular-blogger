@@ -3,23 +3,47 @@ angular-blogger
 
 An AngularJS blog template interfacing with the Blogger API
 
-1. Setup Blogger Account
+####Setup Blogger Account
 
-2. Create a New Blog
+<img src="https://raw.githubusercontent.com/leorue/angular-blogger/master/images/docs/app.png" align="left" width="500" ><br/>
 
-3. Create a new Google Developer Project
+####Create a New Blog
 
-4. Enable Blgger API
+<img src="https://raw.githubusercontent.com/leorue/angular-blogger/master/images/docs/app.png" align="left" width="500" ><br/>
 
-5. Get Google API Key 
+####Create a new Google Developer Project
 
-6. Get Blogger ID
+<img src="https://raw.githubusercontent.com/leorue/angular-blogger/master/images/docs/app.png" align="left" width="500" ><br/>
 
-7. Setup Disqus
+####Enable Blgger API
 
-8. Add Disqus Short Name
+<img src="https://raw.githubusercontent.com/leorue/angular-blogger/master/images/docs/app.png" align="left" width="500" ><br/>
 
-9. Add Disqus DNS Link
+####Get Google API Key
 
-10. Edit Title
+<img src="https://raw.githubusercontent.com/leorue/angular-blogger/master/images/docs/app.png" align="left" width="500" ><br/>
 
+####Get Blogger ID
+
+<img src="https://raw.githubusercontent.com/leorue/angular-blogger/master/images/docs/app.png" align="left" width="500" ><br/>
+
+####Set Blog ID and API Key
+
+<img src="https://raw.githubusercontent.com/leorue/angular-blogger/master/images/docs/app.png" align="left" width="500" ><br/>
+
+####Setup Disqus
+
+####Add Disqus Short Name
+
+<img src="https://raw.githubusercontent.com/leorue/angular-blogger/master/images/docs/comment.png" align="left" width="500" ><br/>
+
+
+####Add Disqus DNS Link
+
+<img src="https://raw.githubusercontent.com/leorue/angular-blogger/master/images/docs/app-1.png" align="left" width="500" ><br/>
+
+
+####Edit Title
+
+
+<img src="https://raw.githubusercontent.com/leorue/angular-blogger/master/images/docs/app-2.png" align="left" width="500" ><br/>
