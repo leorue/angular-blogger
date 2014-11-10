@@ -33,7 +33,6 @@
 		$scope.posts = Blog.get({id:$stateParams.id});
 		$scope.key = $stateParams.id;
 		$scope.postURL = 'http://localhost:8888/' + $stateParams.id;
-		console.log($scope.postURL);
 	   	$scope.searchFilter = function (post) {
 	    var keyword = new RegExp($scope.dataFilter, 'i');
 	    	return !$scope.dataFilter || keyword.test(posts.title) || keyword.test(posts.author.displayName) || keyword.test(posts.labels) || keyword.test(posts.content);
